@@ -1,13 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+main .container {
+  background: white;
+  width: 1100px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75); }
+
 html {
   font-size: 16px; }
 
+body {
+  font-family: 'Roboto', Helvetica, Arial, Geneva, sans-serif; }
+
 #root {
-  background-color: white;
+  height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 3px 3px 0 3px;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 97%, #ff766e 100%);
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 97%, #ff766e 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 97%, #ff866a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0); }
+  background: #ff756e;
+  background: -moz-linear-gradient(top, #ff756e 0%, #ff856a 100%);
+  background: -webkit-linear-gradient(top, #ff756e 0%, #ff856a 100%);
+  background: -o-linear-gradient(top, #ff756e 0%, #ff856a 100%);
+  background: -ms-linear-gradient(top, #ff756e 0%, #ff856a 100%);
+  background: linear-gradient(to bottom, #ff756e 0%, #ff856a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff756e', endColorstr='#ff856a', GradientType=0); }
 
 /*# sourceMappingURL=styles.css.map */

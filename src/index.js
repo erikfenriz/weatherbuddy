@@ -11,4 +11,4 @@ ReactDOM.render(
     <BrowserRouter>
         <Router/>
     </BrowserRouter>
-    , document.getElementById('react_container'));
+    , document.getElementById('root'));
