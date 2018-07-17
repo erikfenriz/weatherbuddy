@@ -1,0 +1,3 @@
+@function fluidFont($target) {
+  @return ($target / 10px) * 1em;
+}
