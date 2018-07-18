@@ -44,6 +44,7 @@ main {
         font: {
           weight: 500;
           size: fluidFont(20px);
+          family: 'Roboto', Helvetica, Arial, Geneva, sans-serif;
         }
         &::placeholder {
           opacity: 0.6;

@@ -1,13 +1,22 @@
 import React, {Component} from 'react';
-import './css/styles.css';
+import Weather from "./components/Weather";
+
+// import Forecast from "./components/Forecast";
 
 class App extends Component {
     render() {
         return (
-            <React.Fragment>
-            </React.Fragment>
-        );
-    }
-}
+            <main>
+                <div className="container">
+                    <h3 className="container__title">Tallinn</h3>
+                    <label>Something <input type="checkbox" className="ios-switch"/></label>
 
-export default App;
+                    <Weather/>
+                    {/*<Forecast/>*/}
+                </div>
+            </main>
+    );
+    }
+    }
+
+    export default App;

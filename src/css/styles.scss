@@ -2,11 +2,12 @@
 @import "palette";
 @import "main";
 @import "font";
+
 html {
   font-size: 16px;
 }
 
-body {
+* {
   font-family: 'Roboto', Helvetica, Arial, Geneva, sans-serif;
 }
 

@@ -26,7 +26,8 @@ main .container {
       color: #4b6774;
       padding: 0;
       font-weight: 500;
-      font-size: 2em; }
+      font-size: 2em;
+      font-family: 'Roboto', Helvetica, Arial, Geneva, sans-serif; }
       main .container__search--city::placeholder {
         opacity: 0.6; }
       main .container__search--city:focus {
@@ -65,7 +66,7 @@ main .container {
 html {
   font-size: 16px; }
 
-body {
+* {
   font-family: 'Roboto', Helvetica, Arial, Geneva, sans-serif; }
 
 #root {
