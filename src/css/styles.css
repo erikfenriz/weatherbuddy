@@ -1,15 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 main .container {
+  position: absolute;
   background: white;
   width: 1100px;
   height: 600px;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75); }
+  main .container__search {
+    position: relative;
+    top: 40%;
+    left: 28%;
+    border: none;
+    width: 50%;
+    display: inline-block;
+    height: 40px; }
+    main .container__search--city {
+      height: 2em;
+      border: none;
+      width: 85%;
+      text-align: center;
+      color: #4b6774;
+      padding: 0;
+      font-weight: 500;
+      font-size: 2em; }
+      main .container__search--city::placeholder {
+        opacity: 0.6; }
+      main .container__search--city:focus {
+        outline: none; }
+    main .container__search--button {
+      padding: 0 0 1px 4px;
+      border: none; }
+      main .container__search--button:focus {
+        outline: none; }
+      main .container__search--button--icon {
+        color: #4b6774;
+        font-size: 1.5em;
+        position: relative;
+        right: 5px;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease; }
+        main .container__search--button--icon:hover {
+          -webkit-transition: all 500ms ease;
+          -moz-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all 500ms ease;
+          color: #ff866a; }
+        @media screen and (max-width: 480px) {
+          main .container__search--button--icon {
+            right: 30px; } }
+    main .container__search--underscore {
+      position: relative;
+      bottom: 13px;
+      margin: 0;
+      width: 90%;
+      color: rgba(78, 102, 116, 0.7);
+      background-color: rgba(78, 102, 116, 0.7); }
 
 html {
   font-size: 16px; }

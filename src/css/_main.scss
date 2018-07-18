@@ -3,7 +3,7 @@
 @import "globalMixins";
 @import "globalFunctions";
 
-@mixin grad{
+@mixin grad {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -14,16 +14,73 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
 }
 
-main{
-  .container{
+main {
+  .container {
+    position: absolute;
     background: white;
     width: 1100px;
     height: 600px;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-box-shadow: 0px -1px 14px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -1px 14px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -1px 14px 0px rgba(0,0,0,0.75);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
+    &__search {
+      position: relative;
+      top: 40%;
+      left: 28%;
+      border: none;
+      width: 50%;
+      display: inline-block;
+      height: 40px;
+      &--city {
+        height: 2em;
+        border: none;
+        width: 85%;
+        text-align: center;
+        color: $mainFont;
+        padding: 0;
+        font: {
+          weight: 500;
+          size: fluidFont(20px);
+        }
+        &::placeholder {
+          opacity: 0.6;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      &--button {
+        padding: 0 0 1px 4px;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        &--icon {
+          color: $mainFont;
+          font-size: 1.5em;
+          position: relative;
+          right: 5px;
+          @include transition;
+          &:hover {
+            @include transition;
+            color: $bodyBottom;
+          }
+          @media screen and (max-width: 480px) {
+            right: 30px;
+          }
+        }
+      }
+      &--underscore {
+        position: relative;
+        bottom: 13px;
+        margin: 0;
+        width: 90%;
+        color: rgba(78, 102, 116, 0.7);
+        background-color: rgba(78, 102, 116, 0.7);
+      }
+    }
   }
 }
