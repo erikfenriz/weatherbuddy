@@ -10,6 +10,10 @@ main .container {
   -webkit-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -1px 14px 0px rgba(0, 0, 0, 0.75); }
+  @media screen and (max-width: 589px) {
+    main .container {
+      width: 100%;
+      height: 100%; } }
   main .container__search {
     position: relative;
     top: 40%;
@@ -62,6 +66,23 @@ main .container {
       width: 90%;
       color: rgba(78, 102, 116, 0.7);
       background-color: rgba(78, 102, 116, 0.7); }
+    main .container__search--local {
+      font-size: 15px;
+      color: rgba(78, 102, 116, 0.9);
+      text-align: center;
+      position: relative;
+      right: 37px;
+      padding: 10px; }
+      main .container__search--local--small {
+        font-size: 11px; }
+      main .container__search--local--large {
+        position: relative;
+        top: 10px;
+        padding: 20px; }
+      main .container__search--local a {
+        text-decoration: none;
+        border-bottom: 1.6px dotted;
+        color: rgba(78, 102, 116, 0.9); }
 
 .switch {
   float: right;
@@ -103,8 +124,7 @@ main .container {
     .old-ios-switch span:before {
       visibility: hidden;
       content: '\2103';
-      color: #fff;
-      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+      color: rgba(0, 0, 0, 0.5);
       left: 13px;
       top: 1px; }
   .old-ios-switch label {
@@ -125,13 +145,11 @@ main .container {
   .old-ios-switch input[type="checkbox"] {
     visibility: hidden; }
   .old-ios-switch input[type="checkbox"]:checked + span {
-    border-top: 1px solid #0e5fa5;
-    border-right: 1px solid #027be2;
-    border-bottom: 1px solid #829eb5;
-    border-left: 1px solid #027be2;
-    background: white;
-    background: -moz-linear-gradient(top, #2893ec, #75afe2 50%);
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2893ec), to(#75afe2)); }
+    border-top: 1px solid #9c9c9c;
+    border-right: 1px solid #9c9c9c;
+    border-bottom: 1px solid #9c9c9c;
+    border-left: 1px solid #9c9c9c;
+    background: #fefefe; }
     .old-ios-switch input[type="checkbox"]:checked + span label {
       left: 38px; }
     .old-ios-switch input[type="checkbox"]:checked + span:after {
@@ -143,40 +161,118 @@ main .container {
   display: inline-block;
   margin: 35px 30px 0 0; }
 
-.weather {
+.application {
   margin: 0 0 0 30px; }
-  .weather .topContent__back {
+  @media screen and (max-width: 511px) {
+    .application {
+      margin: 20px -15px 0 0; } }
+  .application .topContent__back {
     padding: 0 0 1px 4px;
     border: none; }
-    .weather .topContent__back:focus {
+    .application .topContent__back:focus {
       outline: none; }
-    .weather .topContent__back--icon {
+    .application .topContent__back--icon {
+      position: relative;
+      bottom: 5px;
       font-size: 1.4em;
       color: #4b6774;
       -webkit-transition: all 500ms ease;
       -moz-transition: all 500ms ease;
       -o-transition: all 500ms ease;
       transition: all 500ms ease; }
-      .weather .topContent__back--icon:hover {
+      .application .topContent__back--icon:hover {
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
         transition: all 500ms ease;
         color: #ff866a; }
-  .weather .topContent__title {
+  .application .topContent__title {
     color: #4b6774;
-    font-size: 2.2em;
-    font-weight: 600; }
-  .weather .current {
+    font-size: 2.7em; }
+  .application .current {
     padding-top: 3.5em; }
-    .weather .current > * {
+    .application .current > * {
       color: rgba(78, 102, 116, 0.9);
       font-weight: 300; }
-    .weather .current__date {
-      font-size: 2em; }
-    .weather .current__condition {
+    .application .current__date {
+      font-size: 2.8em; }
+    .application .current__condition {
       padding: 10px 0 0 0;
-      font-size: 1.7em; }
+      font-size: 2.3em; }
+  .application .weather > * {
+    display: inline-block;
+    padding: 0 0.6em 0 0; }
+  .application .weather__now {
+    color: #e69684;
+    font-size: 6.7em; }
+    @media screen and (max-width: 812px) {
+      .application .weather__now {
+        font-size: 4em; } }
+  .application .weather__icon {
+    color: #e69684;
+    font-size: 6.5em; }
+    @media screen and (max-width: 812px) {
+      .application .weather__icon {
+        font-size: 4em; } }
+  .application .weather__daytime {
+    position: relative;
+    top: 20px; }
+    @media screen and (max-width: 511px) {
+      .application .weather__daytime > * > * {
+        display: inline-block;
+        padding: 0 9px 0 0; } }
+    .application .weather__daytime > * > * > * {
+      color: #e69684;
+      padding: 5px 3px 0 5px;
+      font-weight: 300; }
+  .application .forecast {
+    padding: 20px 0 0 0;
+    clear: both;
+    text-align: center;
+    position: relative;
+    right: 13px; }
+    .application .forecast > * {
+      display: inline-block;
+      color: #4b6774;
+      padding: 0 9.4% 0 0; }
+      @media screen and (max-width: 1200px) {
+        .application .forecast > * {
+          padding: 0 8% 0 0; } }
+      @media screen and (max-width: 1013px) {
+        .application .forecast > * {
+          padding: 0 5% 0 0; } }
+      @media screen and (max-width: 812px) {
+        .application .forecast > * {
+          padding: 0 4% 0 0; } }
+    .application .forecast :last-child {
+      padding: 0; }
+    .application .forecast__day, .application .forecast__temperature {
+      color: rgba(78, 102, 116, 0.8); }
+      @media screen and (max-width: 811px) {
+        .application .forecast__day, .application .forecast__temperature {
+          font-size: 15px; } }
+      @media screen and (max-width: 792px) {
+        .application .forecast__day, .application .forecast__temperature {
+          font-size: 12px; } }
+      @media screen and (max-width: 511px) {
+        .application .forecast__day, .application .forecast__temperature {
+          font-size: 11px; } }
+    .application .forecast__icon {
+      font-size: 40px;
+      position: relative;
+      padding: 0 0 20px; }
+      @media screen and (max-width: 1200px) {
+        .application .forecast__icon {
+          font-size: 30px; } }
+      @media screen and (max-width: 811px) {
+        .application .forecast__icon {
+          font-size: 25px; } }
+      @media screen and (max-width: 792px) {
+        .application .forecast__icon {
+          font-size: 19px; } }
+      @media screen and (max-width: 511px) {
+        .application .forecast__icon {
+          font-size: 15px; } }
 
 html {
   font-size: 16px; }

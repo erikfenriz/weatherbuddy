@@ -8,17 +8,21 @@
   margin: 35px 30px 0 0;
 }
 
-.weather {
+.application {
   margin: 0 0 0 30px;
+  @media screen and (max-width: 431+80px) {
+    margin: 20px -15px 0 0;
+  }
   .topContent {
     &__back {
       padding: 0 0 1px 4px;
       border: none;
-
       &:focus {
         outline: none;
       }
       &--icon {
+        position: relative;
+        bottom: 5px;
         font-size: 1.4em;
         color: $mainFont;
         @include transition;
@@ -31,8 +35,7 @@
     &__title {
       color: $mainFont;
       font: {
-        size: 2.2em;
-        weight: 600;
+        size: 2.7em;
       }
     }
   }
@@ -45,11 +48,106 @@
       }
     }
     &__date {
-      font-size: 2em;
+      font-size: 2.8em;
     }
     &__condition {
       padding: 10px 0 0 0;
-      font-size: 1.7em;
+      font-size: 2.3em;
+    }
+  }
+  .weather {
+    & > * {
+      display: inline-block;
+      padding: 0 0.6em 0 0;
+    }
+    &__now {
+      color: $secondaryFont;
+      font: {
+        size: 6.7em;
+      }
+      @media screen and (max-width: 692+120px) {
+        font-size: 4em;
+      }
+    }
+    &__icon {
+      color: $secondaryFont;
+      font-size: 6.5em;
+      @media screen and (max-width: 692+120px) {
+        font-size: 4em;
+      }
+    }
+    &__daytime {
+      position: relative;
+      top: 20px;
+
+      & > * > * {
+        @media screen and (max-width: 431+80px) {
+          display: inline-block;
+          padding: 0 9px 0 0;
+        }
+      }
+
+      & > * > * > * {
+        color: $secondaryFont;
+        padding: 5px 3px 0 5px;
+        font: {
+          weight: 300;
+        }
+
+      }
+    }
+  }
+  .forecast {
+    padding: 20px 0 0 0;
+    clear: both;
+    text-align: center;
+    position: relative;
+    right: 13px;
+    & > * {
+      display: inline-block;
+      color: $mainFont;
+      padding: 0 9.4% 0 0;
+      @media screen and (max-width: 1080+120px) {
+        padding: 0 8% 0 0;
+      }
+      @media screen and (max-width: 893+120px) {
+        padding: 0 5% 0 0;
+      }
+      @media screen and (max-width: 692+120px) {
+        padding: 0 4% 0 0;
+      }
+    }
+    :last-child {
+      padding: 0;
+    }
+    &__day, &__temperature {
+      color: rgba(78, 102, 116, 0.8);
+      @media screen and (max-width: 731+80px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 692+100px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 431+80px) {
+        font-size: 11px;
+      }
+    }
+    &__icon {
+      font-size: 40px;
+      position: relative;
+      padding: 0 0 20px;
+      @media screen and (max-width: 1080+120px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 731+80px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 692+100px) {
+        font-size: 19px;
+      }
+      @media screen and (max-width: 431+80px) {
+        font-size: 15px;
+      }
     }
   }
 }
