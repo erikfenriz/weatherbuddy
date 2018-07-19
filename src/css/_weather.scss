@@ -3,3 +3,53 @@
 @import "globalMixins";
 @import "globalFunctions";
 
+.topContent > * {
+  display: inline-block;
+  margin: 35px 30px 0 0;
+}
+
+.weather {
+  margin: 0 0 0 30px;
+  .topContent {
+    &__back {
+      padding: 0 0 1px 4px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+      &--icon {
+        font-size: 1.4em;
+        color: $mainFont;
+        @include transition;
+        &:hover {
+          @include transition;
+          color: $bodyBottom;
+        }
+      }
+    }
+    &__title {
+      color: $mainFont;
+      font: {
+        size: 2.2em;
+        weight: 600;
+      }
+    }
+  }
+  .current {
+    padding-top: fluidFont(35px);
+    & > * {
+      color: rgba(78, 102, 116, 0.9);
+      font: {
+        weight: 300;
+      }
+    }
+    &__date {
+      font-size: 2em;
+    }
+    &__condition {
+      padding: 10px 0 0 0;
+      font-size: 1.7em;
+    }
+  }
+}
