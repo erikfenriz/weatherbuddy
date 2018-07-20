@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 
 export default class Main extends Component {
     city = React.createRef();
+
     render() {
         return (
             <main>
                 <div className="container">
                     <div className="container__search">
-                        <form onSubmit={this.getWeather}>
+                        <form onSubmit={this.props.getWeatherAPI}>
                             <input type="text"
                                    ref={this.city}
                                    name="city"
@@ -18,8 +19,11 @@ export default class Main extends Component {
                             </button>
                             <hr className="container__search--underscore"/>
                         </form>
-                        <p className="container__search--local"><span className="container__search--local--small">or</span><br/>
-                            <span className="container__search--local--large">use my <a href="/city">current position</a></span></p>
+                        <p className="container__search--local"><span
+                            className="container__search--local--small">or</span><br/>
+                            <span className="container__search--local--large">use my <a
+                                href="/city">current position</a></span></p>
+
                     </div>
                 </div>
             </main>

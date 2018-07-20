@@ -1,30 +1,26 @@
 import React, {Component} from 'react';
-import Weather from "./components/Weather";
-// import Forecast from "./components/Forecast";
-// const routes = [
-//     {
-//         path: "/",
-//         component: Main,
-//     },
-//     {
-//         path: "/city",
-//         component: Weather
-//     }
-// ];
+import Main from "./components/Main";
+
+
 
 class App extends Component {
-    getWeather = (event) => {
+
+
+
+    getWeatherAPI = async (event) => {
         event.preventDefault();
-        console.log(event.target.elements.city.value);
+            const val = event.target.elements.city.value;
+            const city = val.replace(/[\d$-/:-?{-~!"^_`\[\]#@]/g, "");
+            if (city === "") {
+                return -1;
+            } else {
+                this.props.history.push(`/forecast/${city}`);
+            }
     };
 
     render() {
         return (
-            <main>
-                <div className="container">
-                    <Weather/>
-                </div>
-            </main>
+            <Main getWeatherAPI={this.getWeatherAPI} />
         );
     }
 }

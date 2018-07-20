@@ -1,16 +1,16 @@
 import React from 'react';
-import Main from './Main';
 import App from '../App';
-
+import Weather from "./Weather";
 import {
     BrowserRouter, Route, Switch
 } from 'react-router-dom';
 
+
 const Router = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={Main}/>
-            <Route path="/city" component={App}/>
+            <Route exact path="/" component={App}/>
+            <Route path="/forecast/:city" component={Weather}/>
         </Switch>
     </BrowserRouter>
 );
