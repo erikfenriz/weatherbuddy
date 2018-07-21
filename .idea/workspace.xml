@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4dadf8-c166-49c4-aca4-510945ad5d2e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="Weather.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Weather.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+            <state relative-caret-position="284">
+              <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -97,6 +97,7 @@
       <find>condition</find>
       <find>getWea</find>
       <find>Fahre</find>
+      <find>consol</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,12 +250,12 @@
       <workItem from="1531982438909" duration="23177000" />
       <workItem from="1532074794299" duration="16799000" />
       <workItem from="1532115069612" duration="6230000" />
-      <workItem from="1532164634864" duration="21008000" />
+      <workItem from="1532164634864" duration="21576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83656000" />
+    <option name="totallyTimeSpent" value="84224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1232" height="777" extended-state="0" />
@@ -268,7 +269,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="11" weight="0.3298193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3298193" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3298193" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Weather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        <state relative-caret-position="284">
+          <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
         </state>
       </provider>
     </entry>
