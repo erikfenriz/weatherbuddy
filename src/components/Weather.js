@@ -48,7 +48,6 @@ export default class Weather extends Component {
         Object.keys(forecastData).forEach(function (key) {
             iconConditions.push(forecastData[key].weather[0].icon);
         });
-        console.log(iconConditions);
         for (let i = 0; i < 7; i++) {
             iconConditions[i] === '01d' ? iconConditions[i] = 'wi-day-sunny'
                 : iconConditions[i] === '01n' ? iconConditions[i] = 'wi-night-clear'
@@ -64,7 +63,6 @@ export default class Weather extends Component {
                                                     : true;
         }
         const hours = new Date().getHours();
-        console.log(hours);
         const isDayTime = hours > 6 || hours < 20;
         const isNightTime = hours < 6 || hours > 20;
         if (isDayTime) {
@@ -83,7 +81,6 @@ export default class Weather extends Component {
                         : true;
             }
         }
-        console.log(iconConditions);
         this.setState({iconConditions});
     };
 
@@ -106,7 +103,6 @@ export default class Weather extends Component {
         day === 1 ? suffix = 'st' : day === 2 ? suffix = 'nd' : suffix = 'th';
         const dateString = `${dayArr[day + 6]}, ${monthsArr[month]} ${calendarDate}${suffix} ${year}`;
         this.setState({dateString, weekDay});
-        console.log(weekDay);
     };
 
     converter = () => {
