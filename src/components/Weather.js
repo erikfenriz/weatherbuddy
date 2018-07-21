@@ -96,15 +96,17 @@ export default class Weather extends Component {
         day = now.getDay();
         calendarDate = now.getDate();
         dayArr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday',
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
             "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
         monthsArr = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
             'August', 'September', 'October', 'November', 'December'];
-        for (let i = -1; i < 6; i++) {
+        for (let i = 6; i < 13; i++) {
             weekDay.push(dayArr[day + i]);
         }
         day === 1 ? suffix = 'st' : day === 2 ? suffix = 'nd' : suffix = 'th';
-        const dateString = `${dayArr[day - 1]}, ${monthsArr[month]} ${calendarDate}${suffix} ${year}`;
+        const dateString = `${dayArr[day + 6]}, ${monthsArr[month]} ${calendarDate}${suffix} ${year}`;
         this.setState({dateString, weekDay});
+        console.log(weekDay);
     };
 
     converter = () => {
