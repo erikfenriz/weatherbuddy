@@ -1,0 +1,21 @@
+@import "palette";
+@import "layout";
+@import "globalMixins";
+@import "globalFunctions";
+
+#notFoundArrow {
+  padding: 21px 0 0 4px;
+}
+
+.notFound {
+  padding-top: 50px;
+  text-align: center;
+  &__code {
+    color: $secondaryFont;
+    font-size: 15em;
+  }
+  &__message {
+    color: $mainFont;
+    text-transform: uppercase;
+  }
+}

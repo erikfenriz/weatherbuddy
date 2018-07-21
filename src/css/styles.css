@@ -188,7 +188,8 @@ main .container {
         color: #ff866a; }
   .application .topContent__title {
     color: #4b6774;
-    font-size: 2.7em; }
+    font-size: 2.7em;
+    text-transform: capitalize; }
   .application .current {
     padding-top: 3.5em; }
     .application .current > * {
@@ -273,6 +274,19 @@ main .container {
       @media screen and (max-width: 511px) {
         .application .forecast__icon {
           font-size: 15px; } }
+
+#notFoundArrow {
+  padding: 21px 0 0 4px; }
+
+.notFound {
+  padding-top: 50px;
+  text-align: center; }
+  .notFound__code {
+    color: #e69684;
+    font-size: 15em; }
+  .notFound__message {
+    color: #4b6774;
+    text-transform: uppercase; }
 
 html {
   font-size: 16px; }
