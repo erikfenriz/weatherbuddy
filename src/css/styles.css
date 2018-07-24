@@ -296,7 +296,6 @@ html {
 
 #root {
   height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
   background: #ff756e;
   background: -moz-linear-gradient(top, #ff756e 0%, #ff856a 100%);
   background: -webkit-linear-gradient(top, #ff756e 0%, #ff856a 100%);
