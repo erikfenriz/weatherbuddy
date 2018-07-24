@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 const API = "cb92c12ab28fe349bd50c6f4f40b61cd";
 const Fahrenheit = '\u00B0F';
-const Celcius = '\u00B0C';
+const Celsius = '\u00B0C';
 
 export default class Weather extends Component {
     state = {
@@ -110,8 +110,8 @@ export default class Weather extends Component {
             const highTemp = Math.round((this.state.highTemp - 32) * 5 / 9);
             const lowTemp = Math.round((this.state.lowTemp - 32) * 5 / 9);
             const forecast = this.state.forecast.map(current => Math.round((current - 32) * 5 / 9));
-            this.setState({highTemp, lowTemp, forecast, symbol: Celcius});
-        } else if (this.state.symbol === Celcius) {
+            this.setState({highTemp, lowTemp, forecast, symbol: Celsius});
+        } else if (this.state.symbol === Celsius) {
             const highTemp = Math.round(this.state.highTemp * 9 / 5 + 32);
             const lowTemp = Math.round(this.state.lowTemp * 9 / 5 + 32);
             const forecast = this.state.forecast.map(current => Math.round(current * 9 / 5 + 32));
