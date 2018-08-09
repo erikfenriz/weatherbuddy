@@ -1,2 +1,2 @@
-Simply a cool weather buddy on React <br>
+a simply cool weather buddy on React <br>
 `npm start` **to start**
